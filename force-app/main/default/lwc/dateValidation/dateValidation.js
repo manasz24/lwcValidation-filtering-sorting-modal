@@ -5,9 +5,9 @@ export default class DateValidation extends LightningElement {
     endDate
     error
     dateHandler(event){
-        console.log(event.target)
-        const {name, value} = event.target
-        this[name] = value //
+        console.log(event.target.name);
+        const {name, value} = event.target;
+        this[name] = value; //this means this.startDate
     }
 
     submitHandler(){
