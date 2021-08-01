@@ -53,7 +53,7 @@ export default class FilteringAndSortingDemo extends LightningElement {
             }, 500)
             
         } else {
-            this.filteredData = [...this.fullTableData]
+            this.filteredData = [...this.fullTableData] //shallow copy
         }
         
     }
